@@ -9,7 +9,7 @@ export default function Home() {
   }, [])
   
   return (
-    <div>
+    <div style={{height: "100vh", background: "blue"}}>
       <h1>Home</h1>
     </div>
   );

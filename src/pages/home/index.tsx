@@ -1,9 +1,9 @@
 import React from 'react'
 
-const inde = () => {
+const index = () => {
   return (
     <div>inde</div>
   )
 }
 
-export default inde
+export default index
