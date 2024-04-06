@@ -7,7 +7,8 @@ type Data = {
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>,
+  res: NextApiResponse<any>
 ) {
-  res.status(200).json({ name: "John Doe" });
+  const remoteID = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
+  res.status(200).json({ remoteID });
 }
